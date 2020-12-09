@@ -3,7 +3,10 @@ date: 2015-01-05 05:54:23
 title: Lorem lorem ipsum
 description: And I'm lorem sure lorem
 category: JS
-_tags: redação
+_tags:
+  - trabalho
+  - geografia
+  - historia
 background: "#d6ba32"
 ---
 

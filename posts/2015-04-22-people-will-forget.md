@@ -3,7 +3,9 @@ date: 2015-04-22 05:54:23
 title: People will forget what you said, people will forget what you did
 description: But people will never forget how you made them feel.
 category: svg
-_tags: trabalho
+_tags:
+  - resumo
+  - historia
 background: "#7d669e"
 ---
 
