@@ -2,8 +2,7 @@
 date: 2014-01-31 05:54:23
 title: Waiting to die
 description: So say goodbye to love and hold your head up high
-category: trabalho
-tags: ["vestibular", "geografia", "biologia"]
+category: svg
 background: "#7d669e"
 ---
 

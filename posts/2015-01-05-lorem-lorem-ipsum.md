@@ -2,9 +2,7 @@
 date: 2015-01-05 05:54:23
 title: Lorem lorem ipsum
 description: And I'm lorem sure lorem
-category: trabalho
-tags: ["vestibular", "geografia", "quimica"]
-
+category: JS
 background: "#d6ba32"
 ---
 
