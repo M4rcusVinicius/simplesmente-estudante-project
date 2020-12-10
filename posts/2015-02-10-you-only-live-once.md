@@ -3,7 +3,7 @@ date: 2015-02-10 05:54:23
 title: You only live once
 description: But if you do it right, once is enough
 category: trabalho
-tags: ["quimica", "matematica", "zoos"]
+tags: ["quimica", "matematica", "quimica"]
 background: "#61728f"
 ---
 
