@@ -2,10 +2,8 @@
 date: 2015-02-08 05:54:23
 title: Be who you are
 description: Because those who mind don't matter, and those who matter don't mind
-category: dev
-_tags:
-  - trabalho
-  - vestibular
+category: trabalho
+tags: ["vestibular", "matematica", "biologia"]
 background: "#61728f"
 ---
 

@@ -2,11 +2,9 @@
 date: 2015-01-03 05:54:23
 title: Two things are infinite
 description: And I'm not sure about the universe.
-category: Misc
-_tags:
-  - trabalho
-  - historia
-  - vestibular
+category: trabalho
+tags: ["vestibular", "geografia", "quimica"]
+
 background: "#7AAB13"
 ---
 
