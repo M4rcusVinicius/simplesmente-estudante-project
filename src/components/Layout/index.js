@@ -12,13 +12,9 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <TransitionPortal level="top">
         <Sidebar />
-      </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
-      <TransitionPortal level="top">
         <MenuBar />
-      </TransitionPortal>
     </S.LayoutWrapper>
   )
 }

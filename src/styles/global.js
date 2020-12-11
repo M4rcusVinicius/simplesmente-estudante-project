@@ -79,7 +79,7 @@ const GlobalStyles = createGlobalStyle`
     --postColor: #111;
     --texts: #555555;
     --highlight: #1fa1f2;
-    --mediumBackground: #f0f0f3;
+    --mediumBackground: #f8f8f8;
     --background: #fff;
     --white: #fff;
     --black: #222;
