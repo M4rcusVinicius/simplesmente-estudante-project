@@ -1,19 +1,14 @@
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-// To add the slug field to each post
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  // Ensures we are processing only markdown files
   if (node.internal.type === "MarkdownRemark") {
-    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
     const slug = createFilePath({
       node,
       getNode,
       basePath: "pages",
     })
-
-    // Creates new query'able field with name of 'slug'
     createNodeField({
       node,
       name: "slug",
@@ -59,6 +54,12 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
+      categoryGroup: allMarkdownRemark {
+        group(field: frontmatter___category) {
+          tag: fieldValue
+          totalCount
+        }
+      }
     }
   `).then(result => {
     const posts = result.data.allMarkdownRemark.edges
@@ -68,8 +69,6 @@ exports.createPages = ({ graphql, actions }) => {
         path: node.fields.slug,
         component: path.resolve(`./src/templates/blog-post.js`),
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
           slug: node.fields.slug,
           previousPost: next,
           nextPost: previous,
@@ -77,8 +76,9 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const postsPerPage = 6
+    const postsPerPage = 2
     const numPages = Math.ceil(posts.length / postsPerPage)
+    const categories = result.data.categoryGroup.group
 
     Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
@@ -87,10 +87,27 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           limit: postsPerPage,
           skip: index * postsPerPage,
-          numPages,
+          numPages: numPages,
           currentPage: index + 1,
         },
       })
-    })
+    })  
+    
+    const numTrabalhos = categories.find(x => x.tag === 'trabalho').totalCount
+    const numPagesTrabalhos = Math.ceil(numTrabalhos / postsPerPage)
+
+    Array.from({ length: numPagesTrabalhos }).forEach((_, index) => {
+      createPage({
+        path: index === 0 ? `/trabalho/` : `/trabalho/page/${index + 1}`,
+        component: path.resolve(`./src/templates/blog-category.js`),
+        context: {
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numPages: numPagesTrabalhos,
+          currentPage: index + 1,
+          category: 'trabalho'
+        },
+      })
+    })  
   })
 }

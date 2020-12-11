@@ -2,7 +2,7 @@
 date: 2016-01-10 05:54:23
 title: Imperfection is beauty, madness is genius
 description: And it's better to be absolutely ridiculous than absolutely boring
-category: css
+category: resumo
 background: "#24809e"
 ---
 
