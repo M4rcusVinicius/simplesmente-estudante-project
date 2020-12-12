@@ -5,7 +5,10 @@ description: And I'm lorem sure lorem
 category: trabalho
 background: "#d6ba32"
 author: Marcus Vinicius
+image: /assets/img/desert.jpg
 ---
+
+
 
 # Lorem ipsum
 
