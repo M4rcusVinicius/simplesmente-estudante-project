@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from 'gatsby'
+import Img from "gatsby-image"
 
 export const PostItemLink = styled(Link)`
   color: var(--texts);
@@ -59,6 +60,15 @@ export const PostItemTag = styled.div`
     padding: .2rem .5rem;
     margin-bottom: .7rem;
   `}
+
+  body#grid & {
+    margin-bottom: 1.5rem;
+  }
+`
+export const PostItemBanner = styled(Img)`
+  border-radius: 25px;
+  min-height: 90px;
+  min-width: 90px;
 
   body#grid & {
     margin-bottom: 1.5rem;
