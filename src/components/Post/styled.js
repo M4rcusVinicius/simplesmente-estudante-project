@@ -40,7 +40,8 @@ export const PostDate = styled.p`
 export const MainContent = styled.section`
   background-color: var(--background);
   max-width: 50rem;
-  padding-top: 2rem;
+  border-radius: 1rem;
+  margin-top: 4rem;
 
   p,
   h1,

@@ -5,7 +5,7 @@ description: But people will never forget how you made them feel.
 category: trabalho
 background: "#7d669e"
 author: Marcus Vinicius
-image:  /assets/img/desert.jpg
+featuredImage: ../static/assets/img/desert.jpg
 ---
 
 

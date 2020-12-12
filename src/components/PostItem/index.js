@@ -1,11 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Img from "gatsby-image"
 
 import getThemeColor from "../../utils/getThemeColor"
 
 import * as S from "./styled"
 
 const PostItem = ({
+  featuredImgFluid,
   slug,
   background,
   category,
@@ -13,7 +15,9 @@ const PostItem = ({
   timeToRead,
   title,
   description,
-}) => (
+}) => {
+
+  return (
   <S.PostItemLink
     to={slug}
     cover
@@ -28,13 +32,15 @@ const PostItem = ({
           {date} • {timeToRead} min de leitura
         </S.PostItemDate>
         <S.PostItemTitle>{title}</S.PostItemTitle>
+      <Img fluid={featuredImgFluid} />
         <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
   </S.PostItemLink>
-)
+)}
 
 PostItem.propTypes = {
+  featuredImgFluid: PropTypes.string,
   slug: PropTypes.string.isRequired,
   background: PropTypes.string,
   category: PropTypes.string.isRequired,

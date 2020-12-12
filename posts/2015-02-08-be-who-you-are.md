@@ -5,7 +5,7 @@ description: Because those who mind don't matter, and those who matter don't min
 category: trabalho
 background: "#61728f"
 author: Marcus Vinicius
-image:  /assets/img/desert.jpg
+featuredImage: ../static/assets/img/desert.jpg
 ---
 
 
