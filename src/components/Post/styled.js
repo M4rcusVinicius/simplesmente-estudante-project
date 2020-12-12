@@ -19,6 +19,7 @@ export const Container = styled.div`
 
 export const Author = styled.div`
   background-color: var(--background);
+  width: 15rem;
 `
 
 export const Name = styled.div`
