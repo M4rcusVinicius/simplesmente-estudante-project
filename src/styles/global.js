@@ -81,6 +81,7 @@ const GlobalStyles = createGlobalStyle`
     --borders: #dedede;
     --postColor: #2d3748;
     --texts: #555555;
+    --title: #2b3340;
     --lightText: #718096;
     --highlight: #1fa1f2;
     --mediumBackground: #f8f8f8;

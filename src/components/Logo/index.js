@@ -2,10 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import getThemeColor from "../../utils/getThemeColor"
-import Avatar from "../Avatar"
+import LogoImage from "../LogoImage"
 import * as S from "./styled"
 
-const Profile = () => {
+const Logo = () => {
   const {
     site: {
       siteMetadata: { title, position },
@@ -22,22 +22,22 @@ const Profile = () => {
   `)
 
   return (
-    <S.ProfileWrapper>
-      <S.ProfileLink
+    <S.LogoWrapper>
+      <S.LogoLink
         to="/"
         cover
         direction="left"
         bg={getThemeColor()}
         duration={0.6}
       >
-        <Avatar />
-        <S.ProfileAuthor>
+        <LogoImage />
+        <S.LogoName>
           {title}
-          <S.ProfilePosition>{position}</S.ProfilePosition>
-        </S.ProfileAuthor>
-      </S.ProfileLink>
-    </S.ProfileWrapper>
+          <S.LogoAlthor>{position}</S.LogoAlthor>
+        </S.LogoName>
+      </S.LogoLink>
+    </S.LogoWrapper>
   )
 }
 
-export default Profile
+export default Logo

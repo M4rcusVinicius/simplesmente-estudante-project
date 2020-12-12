@@ -1,32 +1,34 @@
 import styled from "styled-components"
-import media from "styled-media-query"
 import { Link } from 'gatsby'
 
-export const ProfileWrapper = styled.section`
+export const LogoWrapper = styled.section`
   color: var(--texts);
   display: flex;
   flex-direction: column;
 `
 
-export const ProfileLink = styled(Link)`
+export const LogoLink = styled(Link)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
   display: flex;
   text-align: left;
+  align-items: center;
+  width: 100%;
 
   &:hover {
     color: var(--highlight);
   }
 `
 
-export const ProfileAuthor = styled.h1`
+export const LogoName = styled.h1`
   font-size: 1.2rem;
-  margin: 0 0 0 10px;  
+  margin: 0 0 0 10px; 
+  font-weight: 600; 
 
 `
 
-export const ProfilePosition = styled.small`
+export const LogoAlthor = styled.small`
   display: block;
   font-weight: 300;
   font-size: 0.8rem;

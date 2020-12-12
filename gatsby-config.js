@@ -4,10 +4,10 @@ const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
-    title: `John Doe`,
-    position: `Backend Developer`,
-    description: `A blog about backend development and other cool stuff.`,
-    author: `@myblog`,
+    title: `Simplesmente Estudante`,
+    position: `por Maquina do Mundo`,
+    description: `Site de compartilhamento de informação referentes ao encino fundamental e encino medio, disponiblizando conteudo gratuito para estudar, incluindo para a redação, ENEM, redação ENEM, vestibulares, vestibular, faculdade e provas.`,
+    author: `@MarcusVinicius`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,

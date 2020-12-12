@@ -14,6 +14,7 @@ export const PostTitle = styled.h1`
   font-size: 3rem;
   font-weight: 900;
   margin: 1rem auto;
+  color: var(--title)
 `
 
 export const Container = styled.div`
@@ -38,7 +39,7 @@ export const PostDescription = styled.h2`
 `
 
 export const PostDate = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--lightText)
 `
@@ -64,7 +65,7 @@ export const MainContent = styled.section`
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.069rem;
-    padding: 0 1.4rem;
+    padding: 0 2rem;
 
     ${media.lessThan("large")`
       padding: 0 1rem;
@@ -81,6 +82,7 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
+    color: var(--title);
     margin: 2.4rem auto 1rem;
   }
 

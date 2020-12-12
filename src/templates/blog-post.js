@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
+import Avatar from "../components/Avatar"
 
 import * as S from "../components/Post/styled"
 
@@ -31,6 +32,7 @@ const BlogPost = ({ data, pageContext }) => {
         </S.MainContent>
         <S.Author>
           <S.Name>{post.frontmatter.author}</S.Name>
+          <Avatar />
         </S.Author>
       </S.Container>
         <RecommendedPosts next={next} previous={previous} />

@@ -1,5 +1,5 @@
 import React from "react"
-import Profile from "../Profile"
+import Logo from "../Logo"
 import MenuLinks from "../MenuLinks"
 import MenuBar from "../MenuBar"
 
@@ -7,7 +7,7 @@ import * as S from "./styled"
 
 const Sidebar = () => (
   <S.SidebarWrapper>
-    <Profile />
+    <Logo />
     <MenuLinks />
     <MenuBar />
   </S.SidebarWrapper>

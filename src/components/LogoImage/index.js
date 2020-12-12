@@ -3,13 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import * as S from "./styled"
 
-const Avatar = () => {
-  const { avatarImage } = useStaticQuery(
+const LogoImage = () => {
+  const { logoImage } = useStaticQuery(
     graphql`
       query {
-        avatarImage: file(relativePath: { eq: "profile-photo.jpg" }) {
+        logoImage: file(relativePath: { eq: "logo.png" }) {
           childImageSharp {
-            fluid(maxWidth: 60) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }
@@ -18,7 +18,7 @@ const Avatar = () => {
     `
   )
 
-  return <S.AvatarWrapper fluid={avatarImage.childImageSharp.fluid} />
+  return <S.LogoWrapper fluid={logoImage.childImageSharp.fluid} />
 }
 
-export default Avatar
+export default LogoImage
