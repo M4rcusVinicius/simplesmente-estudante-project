@@ -5,7 +5,7 @@ description: But if you do it right, once is enough
 category: trabalho
 background: "#61728f"
 author: Marcus Vinicius
-image: /assets/img/lake.jpg
+image: [Suspendisse](http://google.com)
 ---
 
 

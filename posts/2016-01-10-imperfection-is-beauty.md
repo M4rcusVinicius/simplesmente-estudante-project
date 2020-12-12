@@ -5,7 +5,7 @@ description: And it's better to be absolutely ridiculous than absolutely boring
 category: resumo
 background: "#24809e"
 author: Marcus Vinicius
-image: /assets/img/lake.jpg
+image: [Suspendisse](http://google.com)
 ---
 
 

@@ -5,7 +5,7 @@ description: And I'm not sure about the universe.
 category: trabalho
 background: "#7AAB13"
 author: Marcus Vinicius
-image: /assets/img/desert.jpg
+image: [Suspendisse](http://google.com)
 ---
 
 

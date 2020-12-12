@@ -5,7 +5,7 @@ description: So say goodbye to love and hold your head up high
 category: trabalho
 background: "#7d669e"
 author: Marcus Vinicius
-image: /assets/img/desert.jpg
+image: [Suspendisse](http://google.com)
 ---
 
 

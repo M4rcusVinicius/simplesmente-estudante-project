@@ -44,6 +44,7 @@ export const query = graphql`
         slug
       }
       frontmatter {
+        image
         author
         title
         description
