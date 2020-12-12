@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -26,7 +25,7 @@ const BlogPost = ({ data, pageContext }) => {
         </S.PostHeader>
       <S.Container>
         <S.MainContent>
-          <Img fluid={featuredImgFluid} />
+          <S.PostBanner fluid={featuredImgFluid} />
           <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         </S.MainContent>

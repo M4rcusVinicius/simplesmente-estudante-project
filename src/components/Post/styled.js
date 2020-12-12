@@ -1,5 +1,10 @@
 import styled from "styled-components"
 import media from "styled-media-query"
+import Img from "gatsby-image"
+
+export const PostBanner = styled(Img)`
+  border-radius: 25px 25px 0 0;
+`
 
 export const PostHeader = styled.header`
   color: var(--postColor);
@@ -15,6 +20,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 4rem;
 `
 
 export const Author = styled.div`
@@ -40,8 +46,8 @@ export const PostDate = styled.p`
 export const MainContent = styled.section`
   background-color: var(--background);
   max-width: 50rem;
-  border-radius: 1rem;
-  margin-top: 4rem;
+  border-radius: 25px;
+  box-shadow: var(--borders) 1px 1px 5px 0px;
 
   p,
   h1,
@@ -55,7 +61,7 @@ export const MainContent = styled.section`
   .button-post {
     color: var(--postColor);
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.069rem;
     padding: 0 1.4rem;

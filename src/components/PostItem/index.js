@@ -32,7 +32,7 @@ const PostItem = ({
           {date} • {timeToRead} min de leitura
         </S.PostItemDate>
         <S.PostItemTitle>{title}</S.PostItemTitle>
-      <Img fluid={featuredImgFluid} />
+        <Img fluid={featuredImgFluid} />
         <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
