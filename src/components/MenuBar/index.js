@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react"
+import { Brightness } from "styled-icons/boxicons-regular/Brightness"
 
-import { Home } from "styled-icons/boxicons-solid/Home"
+import { Moon } from "styled-icons/boxicons-regular/Moon"
 import { SearchAlt2 as Search } from "styled-icons/boxicons-regular/SearchAlt2"
-import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular/UpArrowAlt"
 import { Grid } from "styled-icons/boxicons-solid/Grid"
 import { ThList as List } from "styled-icons/typicons/ThList"
 
-import getThemeColor from "../../utils/getThemeColor"
 
 import * as S from "./styled"
 
@@ -28,32 +27,6 @@ const MenuBar = () => {
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
-        <S.MenuBarLink
-          to="/"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          duration={0.6}
-          title="Voltar para Home"
-        >
-          <S.MenuBarItem>
-            <Home />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
-        <S.MenuBarLink
-          to="/search/"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          duration={0.6}
-          title="Pesquisar"
-        >
-          <S.MenuBarItem>
-            <Search />
-          </S.MenuBarItem>
-        </S.MenuBarLink>
-      </S.MenuBarGroup>
-      <S.MenuBarGroup>
         <S.MenuBarItem
           title="Mudar o tema"
           onClick={() => {
@@ -61,7 +34,7 @@ const MenuBar = () => {
           }}
           className={theme}
         >
-            <Home />
+            {isDarkMode ? <Brightness /> : <Moon />}
         </S.MenuBarItem>
         <S.MenuBarItem
           title="Mudar visualização"
@@ -72,9 +45,15 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
-          <Arrow />
-        </S.MenuBarItem>
+
+        <S.MenuBarLink
+          to="/search/"
+          title="Pesquisar"
+        >
+          <S.MenuBarItem>
+            <Search />
+          </S.MenuBarItem>
+        </S.MenuBarLink>
       </S.MenuBarGroup>
     </S.MenuBarWrapper>
   )

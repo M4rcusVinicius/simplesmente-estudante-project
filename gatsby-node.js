@@ -109,5 +109,22 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })  
+
+    const numResumos = categories.find(x => x.tag === 'resumo').totalCount
+    const numPagesResumos = Math.ceil(numResumos / postsPerPage)
+
+    Array.from({ length: numPagesResumos }).forEach((_, index) => {
+      createPage({
+        path: index === 0 ? `/resumo/` : `/resumo/page/${index + 1}`,
+        component: path.resolve(`./src/templates/blog-category.js`),
+        context: {
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numPages: numPagesResumos,
+          currentPage: index + 1,
+          category: 'resumo'
+        },
+      })
+    })  
   })
 }

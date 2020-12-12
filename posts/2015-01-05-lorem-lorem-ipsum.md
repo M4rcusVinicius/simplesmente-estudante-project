@@ -4,6 +4,7 @@ title: Lorem lorem ipsum
 description: And I'm lorem sure lorem
 category: trabalho
 background: "#d6ba32"
+author: Marcus Vinicius
 ---
 
 # Lorem ipsum
