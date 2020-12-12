@@ -76,7 +76,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const postsPerPage = 2
+    const postsPerPage = 9
     const numPages = Math.ceil(posts.length / postsPerPage)
     const categories = result.data.categoryGroup.group
 

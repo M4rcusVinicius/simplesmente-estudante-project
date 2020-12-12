@@ -8,7 +8,7 @@ import Pagination from "../components/Pagination"
 
 import * as S from "../components/ListWrapper/styled"
 
-const BlogList = props => {
+const CategoryList = props => {
   const postList = props.data.allMarkdownRemark.edges
 
   const {  currentPage, numPages, category } = props.pageContext
@@ -81,4 +81,4 @@ export const query = graphql`
   }
 `
 
-export default BlogList
+export default CategoryList
