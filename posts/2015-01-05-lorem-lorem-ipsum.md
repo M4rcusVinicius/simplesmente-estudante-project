@@ -5,7 +5,7 @@ description: And I'm lorem sure lorem
 category: trabalho
 background: "#d6ba32"
 author: Marcus Vinicius
-image: [Suspendisse](http://google.com)
+image:  /assets/img/desert.jpg
 ---
 
 

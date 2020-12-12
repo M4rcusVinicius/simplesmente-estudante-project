@@ -5,7 +5,7 @@ description: Spend his whole life in disguise?
 category: resumo
 background: "#47650b"
 author: Marcus Vinicius
-image: [Suspendisse](http://google.com)
+image:  /assets/img/desert.jpg
 ---
 
 
