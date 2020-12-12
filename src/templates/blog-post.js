@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
-import Avatar from "../components/Avatar"
+import Althor from "../components/Author"
 
 import * as S from "../components/Post/styled"
 
@@ -21,7 +21,7 @@ const BlogPost = ({ data, pageContext }) => {
         <S.PostHeader>
           <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
           <S.PostDate>
-            {post.frontmatter.author} • {post.frontmatter.date} • {post.timeToRead} min
+            {post.frontmatter.date}   •   {post.timeToRead} min de leitura
           </S.PostDate>
         </S.PostHeader>
       <S.Container>
@@ -30,10 +30,9 @@ const BlogPost = ({ data, pageContext }) => {
           <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
         </S.MainContent>
-        <S.Author>
-          <S.Name>{post.frontmatter.author}</S.Name>
-          <Avatar />
-        </S.Author>
+        <div>
+          <Althor name={post.frontmatter.author} />
+        </div>
       </S.Container>
         <RecommendedPosts next={next} previous={previous} />
         <Comments url={post.fields.slug} title={post.frontmatter.title} />

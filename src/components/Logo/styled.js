@@ -5,6 +5,7 @@ export const LogoWrapper = styled.section`
   color: var(--texts);
   display: flex;
   flex-direction: column;
+  padding: 0.3rem 0;
 `
 
 export const LogoLink = styled(Link)`
@@ -23,7 +24,7 @@ export const LogoLink = styled(Link)`
 
 export const LogoName = styled.h1`
   font-size: 1.2rem;
-  margin: 0 0 0 10px; 
+  margin: 0 0 0 15px; 
   font-weight: 600; 
 
 `

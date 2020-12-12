@@ -8,6 +8,7 @@ export const PostBanner = styled(Img)`
 
 export const PostHeader = styled.header`
   color: var(--postColor);
+  margin-top: 3.2rem;
 `
 
 export const PostTitle = styled.h1`
@@ -22,14 +23,6 @@ export const Container = styled.div`
   width: 100%;
   justify-content: space-between;
   margin-top: 4rem;
-`
-
-export const Author = styled.div`
-  background-color: var(--background);
-  width: 15rem;
-`
-
-export const Name = styled.div`
 `
 
 export const PostDescription = styled.h2`
@@ -146,7 +139,6 @@ export const MainContent = styled.section`
   h4,
   h5 {
     font-weight: 800;
-    letter-spacing: 0.069rem;
     line-height: 1.4;
   }
 
