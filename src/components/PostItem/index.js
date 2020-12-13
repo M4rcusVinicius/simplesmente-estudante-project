@@ -8,7 +8,6 @@ import * as S from "./styled"
 const PostItem = ({
   featuredImgFluid,
   slug,
-  background,
   category,
   date,
   timeToRead,
@@ -40,7 +39,6 @@ const PostItem = ({
 PostItem.propTypes = {
   featuredImgFluid: PropTypes.string,
   slug: PropTypes.string.isRequired,
-  background: PropTypes.string,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
