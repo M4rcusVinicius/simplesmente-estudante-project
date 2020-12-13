@@ -24,21 +24,25 @@ const CategoryList = props => {
         {postList.map(
           ({
             node: {
-              frontmatter: { category, date, description, title },
+              frontmatter: { category, date, description, title, featuredImage },
               timeToRead,
               fields: { slug },
             },
-          }) => (
+          }) => {
+            let featuredImgFluid = featuredImage.childImageSharp.fluid
+            return(
             <PostItem
+              featuredImgFluid={featuredImgFluid}
               slug={slug}
               category={category}
               date={date}
               timeToRead={timeToRead}
               title={title}
               description={description}
-            />
-          )
-        )}
+              />
+              )
+            }
+          )}
       </S.ListWrapper>
 
       <Pagination
@@ -67,6 +71,13 @@ export const query = graphql`
             slug
           }
           frontmatter {
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             category
             date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             description
