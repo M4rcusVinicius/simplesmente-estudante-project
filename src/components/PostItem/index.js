@@ -24,12 +24,14 @@ const PostItem = ({
     duration={0.6}
   >
     <S.PostItemWrapper>
-      <S.PostItemBanner fluid={featuredImgFluid} />
+      <S.PostItemBannerDiv>
+        <S.PostItemBanner fluid={featuredImgFluid} />
+      </S.PostItemBannerDiv>
       <S.PostItemInfo>
-        <S.PostItemDate>
-          {date} • {timeToRead} min de leitura
-        </S.PostItemDate>
         <S.PostItemTitle>{title}</S.PostItemTitle>
+        <S.PostItemDate>
+          {category} • {date} • {timeToRead} min de leitura
+        </S.PostItemDate>
         <S.PostItemDescription>{description}</S.PostItemDescription>
       </S.PostItemInfo>
     </S.PostItemWrapper>
